@@ -13,7 +13,7 @@ var hasAutoClick = false;
 
 autoClickButton.addEventListener("click", function() {
 
-  if (score > 50 && hasAutoClick === false) {
+  if (score >= 50 && hasAutoClick === false) {
     setInterval(function() {
       score++;
       scoreDisplay.textContent = score;
